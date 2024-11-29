@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/style.css') }}">
+    <title>Omegle Clone</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Omegle Clone</h1>
+        <div id="chatbox"></div>
+        <div class="box-msg">
+            <input type="text" id="message" autocomplete="off" placeholder="  Envia un mensaje...">
+            <button id="send">Send</button>
+        </div>
+        <!--
+        <textarea id="message" placeholder="Type your message..."></textarea>
+        <button id="send">Send</button>-->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <!--<script src="{{ url_for('serve_static', filename='js/conection.js') }}"></script>-->
+    <script src="{{ url_for('serve_static', filename='js/script.js') }}"></script>
+</body>
+</html>

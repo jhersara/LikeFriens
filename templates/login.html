@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/log.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>LikeFriends</h1>
+            <p>Conectate y has amigos, <br>En todo el mundo, que esperas..!</p>
+            <div class="social-icons">
+                <a href="#"><img src="{{ url_for('serve_static', filename='icons/facebook.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url_for('serve_static', filename='icons/instagram.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url_for('serve_static', filename='icons/logotipos.png') }}" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Iniciar Sesion</h2>
+            <div class="error-msg hidden" id="error-msg">Usuario o contraseña incorrectos</div>
+            <form action="/login" method="POST">
+                <input type="text" id="username" name="username" required placeholder="Correo electronico">
+                <input type="password" id="password" name="password" required placeholder="Constraseña">
+                <button type="submit">Ingresar</button>
+            </form>
+            <p class="create-account">¿Aun no tienes cuenta? <a href="/register">Crear cuenta</a></p>
+            <div class="social-login">
+                <button class="facebook"><img src="{{ url_for('serve_static', filename='icons/facebook.png') }}" alt="Facebook"></button>
+                <button class="google"><img src="{{ url_for('serve_static', filename='icons/google.png') }}" alt="google"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LikeFriends - Página de Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/home.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>LikeFriends</h1>
+            <div class="buttons">
+                <button id="login"><a href="/login">Entrar</a></button>
+                <button id="register"><a href="/register">Registro</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="overlay"></div>
+            <!--<img src=""{{ url_for('serve_static', filename='img/home.jpg') }}" alt="Background Image">-->
+            <img src="{{ url_for('static', filename='img/home.jpg') }}" alt="Logo">
+            <div class="content">
+                <h2>Conéctate con nuevos amigos</h2>
+                <p>LikeFriends te permite conocer gente nueva y hacer amigos de manera fácil y divertida. ¡Regístrate hoy mismo y comienza a chatear!</p>
+                <a href="/login"><button id="start-chat">Comenzar a Chatear</button></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

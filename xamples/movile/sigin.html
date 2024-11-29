@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Conectate con Amigos</h2>
+            <p>LikeFriends, ¡es hora de conocer nuevos amigos.!</p>
+            <div class="content-btn">
+                <button id="" class="active-btn"><a href="./register.html" class="active-btn">Get Started</a></button>
+                <button id=""><a href="./login.html">Sign In</a></button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            background-image: url('/static/img/home.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        @media only screen and (max-width: 480px){
+            body, html{
+                height: 100%;
+                width: 100%;
+            }
+            .container{
+                height: 300px;
+                margin: 20px;
+                background-color: transparent;
+                backdrop-filter: blur(2px);
+
+            }
+            .container .content{
+                margin: 0;
+            }
+            .container .content h2{
+                color: #FFFFFF;
+                font-size: 1.8rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container .content p{
+                padding: 20px 10px;
+                color: #f0efef;
+                font-size: 1.1rem;
+                font-weight: 400;
+
+
+            }
+            .container .content .content-btn{
+                display: flex;
+                flex-direction: column;
+            }
+            .container .content .content-btn button{
+                padding: 20px 0;
+                margin: 7px 0;
+                border-radius: 13px;
+                border-style: none;
+                background-color: #FFFFFF;
+
+            }
+            .container .content .content-btn button a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            .container .content .content-btn .active-btn {
+                background-color: rgb(129, 71, 236);
+                color: #FFFFFF;
+            }
+    </style>
+</body>
+</html>

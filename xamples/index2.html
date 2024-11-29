@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reguister form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-info">
+            <h1>LikeFriends</h1>
+            <div>
+                <h2>Aun no tienes una cuenta.?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptas itaque excepturi, dolore non possimus animi nemo quo quaerat.</p>
+            <div class="media">
+                <span>F</span>
+                <span>In</span>
+                <span>tw</span>
+                <span>G+</span>
+            </div>
+            </div>
+            
+        </div>
+        <div class="box-form">
+            <h2>Ingresa</h2>
+            <form action="">
+                <p class="text">E-mail</p>
+                <input type="email">
+                <p class="text">Password</p>
+                <input type="password">
+                <div class="termin">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Está de acuerdo en aceptar <a href="#">Términos y Condiciones</a></label>
+                </div>
+                
+            </form>
+            <div class="send-btn">
+                <button>Ingresar ></button>
+                <a href="#">No tienes cuenta.</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+<style>
+
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        background-repeat: no-repeat; /* Evita la repetición */
+        background-position: center; /* Centra la imagen */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-attachment: fixed; /* Fija la imagen en su posición original */
+        filter: brightness(1.3); 
+        background-image: url('https://i.ytimg.com/vi/efTAIJ4e8vA/maxresdefault.jpg');
+    }
+
+    .container .box-info,.box-form{
+        padding: 50px;
+    }
+
+    .container .box-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .container .box-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        padding-right: 70px;
+        background-color: rgba(8, 4, 4, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 9px;
+        filter: brightness(1.2);
+        height: 100%;
+        width: 70%;
+    }
+
+    .box-form h2 {
+        margin-bottom: 20px;
+        color: #FFFFFF;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+
+    .text {
+        margin-bottom: 5px;
+        color: #7e7d7d;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="checkbox"] {
+        width: 100%;
+        padding: 10px;
+        border-style: none;
+
+        margin-bottom: 10px; 
+        border-bottom:2px solid #ccc;
+        background-color: transparent;
+    }
+
+    .send-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .send-btn button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .send-btn button:hover {
+        background-color: #0056b3;
+    }
+
+    .send-btn a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .send-btn a:hover {
+        text-decoration: underline;
+    }
+
+    .termin{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        
+    }
+    .termin label{
+        height: 10px;
+    }
+    .termin label a{
+        display: flex;
+    }
+    .termin input[type="checkbox"] {
+            margin-right: 10px; /* Espacio entre el checkbox y el texto */
+    }
+
+</style>
+</html>

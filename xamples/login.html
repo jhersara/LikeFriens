@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>LikeFriend</h1>
+            <p>Conexiones y amistad</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="email" placeholder="Correo electrónico">
+                <input type="password" placeholder="Contraseña">
+                <button type="submit">Ingresar</button>
+            </form>
+            <p class="create-account">¿Aún no tienes cuenta? <a href="#">Crear cuenta</a></p>
+            <div class="social-login">
+                <button class="facebook">Continuar con Facebook</button>
+                <button class="google">Continuar con Google</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.left-section {
+    flex: 1;
+    text-align: center;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section input, .right-section button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.create-account {
+    text-align: center;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+    </style>
+</body>
+</html>

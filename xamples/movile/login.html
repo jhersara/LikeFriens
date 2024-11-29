@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign U</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content-user">
+            <div class="content-head">
+                <h2>Welcome Back</h2>
+                <div class="img-src">
+                    <img src="/static/icons/mano-que-saluda.png" alt="Upload">
+                </div>
+            </div>
+            <div class="content-form">
+                <form action="">
+                    <input class="box-form" type="email" name="email id="email" required placeholder="Email">
+                    <input class="box-form" type="text" id="username" name="username" required placeholder="Nombre">
+                    <input class="box-form" type="password" id="password" name="password" required placeholder="Password">
+                </form>
+            </div>
+            <div class="content-terms">
+                <p>Deacuerdo con la politica y privacidad.<a href="#" class="txt-bold">Terminos y Condiciones </a></p>
+            </div>
+            <div class="content-btn">
+                <button type="submit" class="active-btn">Sing In</button>
+            </div>
+            <div class="content-sing">
+                <p>Ya tienes una cuenta..! <a href="sigin.html" class="txt-bold">Get Started</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            background-image: url('/static/img/home.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        @media only screen and (max-width: 480px){
+            body, html{
+                height: 100%;
+                width: 100%;
+            }
+            .container{
+                height: 80%;
+                padding: 20px;
+                border-radius: 20px ;
+                background-color: #0c1116;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transform: translateY(0px);
+                animation: float-up 1s ease-in-out;
+            }
+            /*Animacion grafica ui*/
+            @keyframes float-up {
+                0%{
+                    transform: translateY(700px);
+                }
+                50%{
+                    transform: translateY(350px);
+                }
+                100%{
+                    transform: translateY(0px);
+                }
+            }
+            .container .content-user{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 0;
+                padding: 0;
+            }
+            .container .content-user .content-head{
+                padding: 15px 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            .container .content-user .content-head h2{
+                color: #FFFFFF;
+                font-size: 1.9rem;
+                text-align: left;
+                width: 100px;
+                word-break:keep-all;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container .content-user .content-head .img-src{
+                background-color: transparent;
+                border-radius: 50%;
+                border: 2px solid #7e7c7c;
+                height: 100%;
+            }
+            .container .content-user .content-head .img-src img{
+                color: #424242;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                text-align: center;
+            }
+            .container .content-user .content-form form{
+                display: flex;
+                flex-direction: column;
+            }
+            .container .content-user .content-form form .box-form{
+                padding: 15px 0;
+                margin: 10px 0; 
+                font-size: 1.2rem;
+                background-color: transparent;
+                border: 1px solid #686767;
+                color: #918f8f;
+                border-radius: 10px;
+                text-indent: 15px;
+                letter-spacing: 1px;
+            }
+            .container .content-user .content-terms{
+                text-align: left;
+                width: 90%;
+                font-size: 1rem;
+            }
+            .container .content-user .content-terms p{
+                color: #918f8f;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                font-weight: 400;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container .content-user .content-terms p a{
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            .container .content-user .content-btn{
+                display: flex;
+                width: 100%;
+            }
+
+            .container .content-user .content-btn button{
+                padding: 15px 0;
+                width: 100%;
+                border-radius: 13px;
+                border-style: none;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .container .content-user .content-btn button:hover{
+                background-color: rgba(129, 71, 236, 0.644);
+            }
+            .container .content-user .content-btn button:focus{
+                background-color: rgba(129, 71, 236, 0.644);
+            }
+            .active-btn {
+                background-color: rgb(129, 71, 236);
+                color: #FFFFFF;
+            }
+            p{
+                color: #918f8f;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+            }
+            a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+    </style>
+</body>
+</html>

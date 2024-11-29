@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screend</title>
+</head>
+<body>
+    <h1>LF</h1>
+</body>
+
+<!--Estilos escreen responsivo-->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        text-align: center;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: linear-gradient(to right,rgb(250, 75, 75), rgb(55, 55, 238));
+        filter: blur(1px);
+    }
+
+    h1{
+        color: #ffffff;
+        font-family:'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: bolder;
+
+        z-index: 1;
+    }
+    @media only screen and (max-width: 480px){
+        body, html{
+            height: 100%;
+            width: 100%;
+        }
+    }
+</style>
+</html>

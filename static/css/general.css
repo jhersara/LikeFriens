@@ -1,0 +1,99 @@
+:root {
+    --color-primary: #F54B64;
+    --color-primar: #F78361;
+    --color-yellow: #FFD428;
+    --color-darck-grey: #a3a9b4;
+    --color-white: #FFFFFF;
+    --color-gorblue: #4C51C6;
+    --color-night-blue: #607FF2;
+    --color-moon-white: #E9F4FF;
+    --color-atum-glory: #FD830D;
+    --color-black: #191E29;
+    --color-blue: #132D46;
+    --color-green: #01C38D;
+    --color-gray: #696E79;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/Karla/static/Karla-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla';
+    background-color: var(--color-black);
+    backdrop-filter: blur(2px);
+}
+
+p, a{
+    font-family: 'Karla' ;
+    color: var(--color-darck-grey);
+}
+
+h1, h2{
+    font-family: 'Montserrat';
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+
+header{
+    background-color: #01c38c00;
+    padding: 15px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 2px 5px var(--color-green);
+    backdrop-filter: blur(2px);
+}
+
+button{
+    background-color: var(--color-gorblue);
+    font-weight: 600;
+    color: var(--color-white);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px 24px;
+
+}
+
+button:hover{
+    background-color: var(--color-night-blue);
+}
+
+main{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-moon-white);
+}
